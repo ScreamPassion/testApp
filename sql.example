@@ -8,3 +8,6 @@ CREATE TABLE test.visitors
     views_count INT(11) UNSIGNED NOT NULL,
     PRIMARY KEY (id)
 ) ENGINE = InnoDB;
+
+INSERT INTO `visitors` (`ip_address`, `user_agent`, `view_date`, `page_url`, `views_count`) VALUES
+(2991061977, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36', '2022-02-23 11:06:01', 'http://domain.fun/index.html', 4);
