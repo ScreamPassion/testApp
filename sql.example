@@ -1,0 +1,10 @@
+CREATE TABLE test.visitors
+(
+    id          BIGINT       NOT NULL AUTO_INCREMENT,
+    ip_address  INT(11) UNSIGNED NOT NULL,
+    user_agent  TEXT         NOT NULL,
+    view_date   TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    page_url    VARCHAR(255) NOT NULL,
+    views_count INT(11) UNSIGNED NOT NULL,
+    PRIMARY KEY (id)
+) ENGINE = InnoDB;
